@@ -1,4 +1,4 @@
-# vim-valam
+# vim-vala
 
 vim-vala is a Vim syntax, indent and ftdetect files for Vala. 
 It is mainly from
