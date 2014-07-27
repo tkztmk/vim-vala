@@ -27,6 +27,6 @@ if exists("b:did_indent")
   finish
 endif
 let b:did_indent = 1
-setl cin
+setl cin cinoptions& cinoptions+=j1
 let b:undo_indent = "setl cin<"
 
