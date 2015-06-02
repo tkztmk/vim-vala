@@ -74,7 +74,7 @@ if exists("vala_comment_strings")
   syn region 	valaCommentL		start="//" end="$" keepend contains=@valaCommentGroup,valaComment2String,valaCharacter,valaNumber,valaSpaceError,@Spell
   syn region 	valaComment		matchgroup=valaCommentStart start="/\*" end="\*/" contains=@valaCommentGroup,@valaCommentStringGroup,valaCommentStartError,valaSpaceError,@Spell extend fold
   if !exists("vala_ignore_valadoc")
-    syn region 	valaDocComment 		matchgroup=valaCommentStart start="/\*\*" end="\*/" keepend contains=@valaCommentGroup,@valaDocCommentGroup,@valaCommentStringGroup,valaCommentStartError,valaSpaceError,@Spell
+    syn region 	valaDocComment 		matchgroup=valaCommentStart start="/\*\*" end="\*/" keepend contains=@valaCommentGroup,@valaDocCommentGroup,@valaCommentStringGroup,valaCommentStartError,valaSpaceError,@Spell fold
   endif
 else
   syn region	valaCommentL		start="//" end="$" keepend contains=@valaCommentGroup,valaSpaceError,@Spell
